@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#home"><div class="logo">Nanasaheb</div></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <button onclick="toggleTheme()"><i class="fa-solid fa-moon fa-xl"></i></button>
+
+  </nav>
+
+  <section id="home" class="info-section">
+    <div class="text">
+      <h1>Hello, I'm Nansaheb Barkul</h1>
+        <div class="typewriter-container">
+    <span id="role-text"></span>
+  </div>
+      <p>I'm a passionate developer aiming to build beautiful web applications and improve my skills every day.</p>
+      <div class="links">
+        <a target="_blank" href="https://www.linkedin.com/in/nanasaheb-barkul-79798a2b4/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+        <a target="_blank" href="https://github.com/Nanasaheb29"><i class="fa-brands fa-github fa-lg"></i></a>
+        <a target="_blank" href="#"><i class="fa-brands fa-square-instagram fa-lg"></i></a>
+        <a target="_blank" href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+      </div>
+    </div>
+    <div class="image">
+      <div class="circle">
+      <img src="WhatsApp_Image_2025-05-24_at_17.49.40_09d89d21-removebg-preview.png" alt="Profile Picture">
+      </div>  
+    </div>
+   
+  </section>
+   <div class="line-con"> <hr class="line"></div>
+
+  <section id="skills" class="skills-section">
+    <h1>My Skills</h1>
+    <div class="skills-container">
+      <div class="skill-category">
+        <h2>Frontend</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h2>Backend</h2>
+        <ul>
+          <li>Basic Java</li>
+          <li>Basic Python</li>
+          <li>Basic ASP.NET</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h2>Version Control</h2>
+        <ul>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Netlify</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+   <div class="line-con"> <hr class="line"></div>
+
+   <section id="project" class="projects-section">
+    <h1>My Projects</h1>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="Screenshot (1).png" alt="Project 1 Screenshot" />
+        <h3>Calculator App</h3>
+        <p>A simple task manager using HTML, CSS, JavaScript.</p>
+        <a href="https://calculator-project-23.netlify.app/" target="_blank">Live Demo</a>
+      </div>
+      <div class="project-card">
+        <img src="Screenshot (2).png" alt="Project 2 Screenshot" />
+        <h3>Country Search </h3>
+        <p>Search country and show population and some information using API and JavaScript.</p>
+        <a href="https://world-country-search.netlify.app/" target="_blank">Live Demo</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Project 3 Screenshot" />
+        <h3>Portfolio Website</h3>
+        <p>Personal website built using HTML, CSS, and JavaScript.</p>
+        <a href="#" target="_blank">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+   <div class="line-conn"> <hr class="line"></div>
+
+
+   <section id="Contact" class="contact-section">
+    <h1>Contact Me</h1>
+    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+      <input type="hidden" name="access_key" value="904e9b62-c486-4c54-be03-789c297de608">
+
+      <input type="text" name="from_name" placeholder="Your Name" required />
+      <input type="email" name="reply_to" placeholder="Your Email" required />
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+      <button type="submit">Send Message</button>
+      <button type="reset">reset</button>
+      <p id="form-message"></p>
+    </form>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
