@@ -379,7 +379,7 @@ height: 34px;
 .project-card a {
   display: inline-block;
   padding: 8px 15px;
-  background: var(--mode-bg);
+  background:rgb(90, 99, 218);
   color: var(--modetext-bg);
   text-decoration: none;
   border-radius: 5px;
